@@ -15,15 +15,22 @@ def count_paragraphs(text: str) -> int:
     paragraphs = [p for p in paragraphs if p.strip()]
     return len(paragraphs)
 
-if __name__ == "__main__":
-    sample_text = """"
-    This is a sample text. It contains multiple sentences. And even multiple paragraphs.
-    
-    This is the second paragraph. It also has sentences.
+def longest_word(text: str) -> str:
+    words = text.split()
+    if not words:
+        return ""
+    return max(words, key=len)
 
-    This is the third paragraph. It has sentences too.
-    """
-    print(f"Word count: {count_words(sample_text)}")
-    print(f"Character count: {count_characters(sample_text)}")
-    print(f"Sentence count: {count_sentences(sample_text)}")
-    print(f"Paragraph count: {count_paragraphs(sample_text)}")
+def longest_sentence(text: str) -> str:
+    sentences = text.split('.')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    if not sentences:
+        return ""
+    return max(sentences, key=len)
+
+def longest_paragraph(text: str) -> str:
+    paragraphs = text.split('\n\n')
+    paragraphs = [p.strip() for p in paragraphs if p.strip()]
+    if not paragraphs:
+        return ""
+    return max(paragraphs, key=len)
