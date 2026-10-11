@@ -10,7 +10,6 @@ from analyzer.text_analyzer import (
     longest_word,
 )
 
-
 texto = """
 Esto es un texto de prueba. Contiene varias oraciones y párrafos.
 El objetivo es probar las funciones del analizador de texto. Cada función debe contar correctamente las palabras, caracteres, oraciones y párrafos. Además, debe identificar la palabra más larga, la oración más larga y el párrafo más largo.
