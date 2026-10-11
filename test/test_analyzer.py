@@ -3,15 +3,17 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+
 from analyzer.text_analyzer import (
-    count_words,
     count_characters,
-    count_sentences,
     count_paragraphs,
-    longest_word,
+    count_sentences,
+    count_words,
+    longest_paragraph,
     longest_sentence,
-    longest_paragraph
+    longest_word,
 )
+
 
 def test_count_words():
     texto = "This is a test."
