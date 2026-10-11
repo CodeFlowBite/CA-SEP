@@ -1,3 +1,5 @@
+
+
 from analyzer.text_analyzer import (
     count_characters,
     count_paragraphs,
