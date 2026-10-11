@@ -1,4 +1,12 @@
-from analyzer.text_analyzer import *
+from analyzer.text_analyzer import (
+    count_words,
+    count_characters,
+    count_sentences,
+    count_paragraphs,
+    longest_word,
+    longest_sentence,
+    longest_paragraph
+)
 
 texto = """
 Esto es un texto de prueba. Contiene varias oraciones y párrafos.
